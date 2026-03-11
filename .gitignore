@@ -3,21 +3,3 @@ node_modules/
 
 # Python virtual environment
 .venv/
-
-# Playwright artifacts
-.playwright/
-.playwright-cli/
-test-results/
-playwright-report/
-
-# Screenshots / logs
-*.png
-*.jpg
-*.jpeg
-
-# Claude agent files
-.agents/
-.claude/
-
-# Skills config
-skills-lock.json
