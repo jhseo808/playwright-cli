@@ -1,85 +1,97 @@
 ---
 name: testcase-generator
-description: Generate structured Playwright test cases by exploring a website with playwright-cli. Use when the user wants to create test cases for a URL or feature, write automated tests, generate a spec file, or document test scenarios.
-allowed-tools: Bash(playwright-cli:*), Write, Read, Glob
+description: Generate test case documentation from Playwright spec files. Reads tests/*.spec.ts files and creates human-readable testcase/*.md documents organized by feature. Use when the user wants to document test cases, generate a testcase report, or create QA documentation from existing playwright tests.
+allowed-tools: Read, Write, Glob
 ---
 
 # Testcase Generator
 
-Explore a website using `playwright-cli` and generate structured Playwright TypeScript test cases saved to `tests/`.
+Reads Playwright spec files from `tests/` and generates structured test case documentation in `testcase/`.
 
 ## Workflow
 
-### 1. Understand the scope
-Ask (or infer from context):
-- **Target URL** — what page to test
-- **Feature name** — used for the file name (e.g. `login`, `signup`, `checkout`)
-- **Scenarios** — what test cases to cover (if not given, discover them by exploring)
-
-### 2. Explore with playwright-cli
-```bash
-playwright-cli open [URL]
-playwright-cli snapshot
-# navigate through key flows and take snapshots
-playwright-cli click e[N]
-playwright-cli snapshot
-playwright-cli close
+### 1. Scan spec files
 ```
+Glob: tests/*.spec.ts
+```
+- If a specific feature is given, target that file only
+- Otherwise, process all spec files
 
-Focus on:
-- Happy path (normal user flow)
-- Validation / error cases (empty fields, wrong input)
-- UI element visibility (buttons, links, forms)
-- Navigation / URL changes
+### 2. Parse each spec file
 
-### 3. Write test cases
+From each `tests/[feature].spec.ts`, extract:
+- `test.describe(...)` → 기능명 (Feature name)
+- Each `test('TCxx - ...', ...)` → 개별 테스트케이스
+  - TC ID (e.g. TC01)
+  - 테스트 목적 (purpose from the test name)
+  - 사전 조건 (precondition: `page.goto(...)` calls)
+  - 테스트 단계 (steps: actions — `click`, `fill`, `goto`, etc.)
+  - 기대 결과 (expected: `expect(...)` assertions)
 
-Use the template at [templates/testcase.spec.ts](templates/testcase.spec.ts).
+### 3. Generate documentation
 
-Rules:
-- File name: `tests/[feature-name].spec.ts`
-- Group tests under `test.describe('[기능명] 테스트', ...)`
-- Number each test: `TC01`, `TC02`, ... in order
-- Each test must be **independent** (no shared state between tests)
-- Use **role-based locators** (`getByRole`, `getByLabel`, `getByText`) — avoid CSS selectors
-- Add `expect` assertions for every meaningful outcome
-- Write comments in Korean (Given / When / Then pattern)
+Output file: `testcase/[feature].md`
 
-### 4. Save the file
+Use this format for each test case:
 
-Write the completed spec to `tests/[feature-name].spec.ts`.
+```markdown
+# [기능명] 테스트케이스
 
-Confirm the file path and test count to the user when done.
+| 항목 | 내용 |
+|------|------|
+| 대상 URL | [URL] |
+| 작성일 | [YYYY-MM-DD] |
+| 작성자 | - |
 
 ---
 
-## TC naming convention
+## TC01 - [테스트 목적]
 
-| Pattern | Description |
-|---------|-------------|
-| `TC01 - [목적]` | Happy path / 정상 케이스 |
-| `TC02~` | 에러/예외 케이스 |
-| Last TCs | UI 노출 확인, 링크 확인 등 |
+| 항목 | 내용 |
+|------|------|
+| 테스트 유형 | [Happy Path / 에러 케이스 / UI 확인] |
+| 우선순위 | [High / Medium / Low] |
 
-## Assertion cheatsheet
+**사전 조건**
+- [preconditions]
 
-```typescript
-await expect(page).toHaveURL(/pattern/);
-await expect(page).toHaveTitle(/title/);
-await expect(locator).toBeVisible();
-await expect(locator).toHaveText('text');
-await expect(locator).toBeEnabled();
-await expect(locator).toBeDisabled();
-await expect(locator).toHaveValue('value');
+**테스트 단계**
+1. [step 1]
+2. [step 2]
+3. ...
+
+**기대 결과**
+- [expected result 1]
+- [expected result 2]
+
+---
 ```
 
-## Locator cheatsheet
+### 4. Priority rules
 
-```typescript
-page.getByRole('button', { name: '로그인' })
-page.getByRole('textbox', { name: '아이디 입력' })
-page.getByRole('link', { name: '회원가입' })
-page.getByLabel('이메일')
-page.getByText('오류 메시지')
-page.locator('text=직접 텍스트')
-```
+| TC 범위 | 테스트 유형 | 우선순위 |
+|---------|-----------|---------|
+| Happy path (정상 흐름) | Happy Path | High |
+| 에러/예외/미입력 | 에러 케이스 | High |
+| UI 노출/링크 확인 | UI 확인 | Medium |
+| 기타 동작 확인 | 동작 확인 | Low |
+
+### 5. Save & confirm
+
+- Create `testcase/` directory if it doesn't exist
+- Write `testcase/[feature].md`
+- Report: feature name, file path, number of TCs documented
+
+## Feature naming
+
+The output file name matches the spec file name:
+- `tests/melon-login.spec.ts` → `testcase/melon-login.md`
+- `tests/melon-signup.spec.ts` → `testcase/melon-signup.md`
+- `tests/checkout.spec.ts` → `testcase/checkout.md`
+
+## Notes
+
+- Write all documentation in **Korean**
+- Translate code-level steps into natural language (e.g. `await page.getByRole('button', { name: '로그인' }).click()` → "로그인 버튼 클릭")
+- Do NOT include raw TypeScript code in the output document
+- Each TC section must be self-contained (reader should not need to see the code)

@@ -1,0 +1,39 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Melon" [level=1] [ref=e5]:
+      - generic [ref=e6]: Melon
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e12]:
+        - textbox [ref=e13]: testuser
+        - button "입력내용 삭제" [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]: 입력내용 삭제
+      - generic [ref=e17]:
+        - generic [ref=e18] [cursor=pointer]: 비밀번호 입력
+        - textbox "비밀번호 입력" [ref=e19]
+      - generic [ref=e21]:
+        - checkbox "로그인 상태 유지" [ref=e22]
+        - generic [ref=e25] [cursor=pointer]: 로그인 상태 유지
+    - paragraph [ref=e27]: 현재 입력하신 아이디가 등록되어 있지 않거나, 아이디 또는 비밀번호를 잘못 입력하셨습니다.
+    - button "로그인" [ref=e29] [cursor=pointer]
+    - generic [ref=e30]:
+      - link "아이디 찾기" [ref=e31] [cursor=pointer]:
+        - /url: javascript:goSearch('ID');
+      - link "비밀번호 찾기" [ref=e32] [cursor=pointer]:
+        - /url: javascript:goSearch('PWD');
+  - contentinfo [ref=e33]:
+    - generic [ref=e34]:
+      - heading "서비스 이용정보" [level=2]
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - link "이용약관" [ref=e37] [cursor=pointer]:
+            - /url: javascript:_linkInfo.TERMS1_1('WP10');
+        - listitem [ref=e38]:
+          - link "위치기반서비스이용약관" [ref=e39] [cursor=pointer]:
+            - /url: javascript:_linkInfo.TERMS1_3('WP10', true);
+        - listitem [ref=e40]:
+          - link "개인정보처리방침" [ref=e41] [cursor=pointer]:
+            - /url: javascript:_linkInfo.TERMS3('WP10', true);
+      - paragraph [ref=e42]: "문의전화 : 1566-7727 (평일 09:00-18:00, 유료)"
+      - link "© Kakao Entertainment Corp." [ref=e44] [cursor=pointer]:
+        - /url: https://kakaoent.com

@@ -1,0 +1,230 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: skip navigation
+    - list:
+      - listitem:
+        - link "메뉴" [ref=e4] [cursor=pointer]:
+          - /url: "#gnb_menu"
+      - listitem:
+        - link "마이영역" [ref=e5] [cursor=pointer]:
+          - /url: "#id_box"
+      - listitem:
+        - link "본문" [ref=e6] [cursor=pointer]:
+          - /url: "#conts_section"
+      - listitem:
+        - link "하단 정보" [ref=e7] [cursor=pointer]:
+          - /url: "#footer"
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: 상단 빠른 메뉴
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link "멜론티켓" [ref=e16] [cursor=pointer]:
+              - /url: //ticket.melon.com/main/index.htm
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "이용권구매" [ref=e20] [cursor=pointer]:
+              - /url: /commerce/pamphlet/web/sale_listMainView.htm
+          - listitem [ref=e21]:
+            - link "멜론혜택" [ref=e22] [cursor=pointer]:
+              - /url: //www.melon.com/benefit/lounge/main.htm
+          - listitem [ref=e23]:
+            - link "이벤트" [ref=e24] [cursor=pointer]:
+              - /url: /event/list.htm
+          - listitem [ref=e25]:
+            - link "공지사항" [ref=e26] [cursor=pointer]:
+              - /url: //www.melon.com/customer/announce/index.htm
+      - generic [ref=e27]:
+        - heading "Melon" [level=1] [ref=e28]:
+          - link "Melon" [ref=e29] [cursor=pointer]:
+            - /url: //www.melon.com/index.htm
+            - generic [ref=e30]: Melon
+        - group "통합검색영역" [ref=e31]:
+          - generic: 통합검색영역
+          - textbox "검색 입력 편집창" [ref=e32]:
+            - /placeholder: ""
+            - text: 멜론으로 듣자! 한국 대중음악 필청 명반 100
+          - status [ref=e33]
+          - button "검색" [ref=e34] [cursor=pointer]:
+            - generic [ref=e35]: 검색
+        - generic [ref=e36]:
+          - link "인기 검색어":
+            - /url: "#none"
+          - list [ref=e38]:
+            - listitem [ref=e39]:
+              - strong [ref=e40]:
+                - text: "1"
+                - generic [ref=e41]: 위
+              - link "먼데이 키즈" [ref=e42] [cursor=pointer]:
+                - /url: javascript:melon.link.goTotalSearch('먼데이 키즈','','searchFrm','','hot_kwd');
+              - generic [ref=e44]: 새진입
+    - generic [ref=e45]:
+      - list [ref=e46]:
+        - listitem [ref=e47]:
+          - link "현재 선택된 메뉴- 멜론차트" [ref=e48] [cursor=pointer]:
+            - /url: //www.melon.com/chart/index.htm
+            - generic [ref=e49]: 현재 선택된 메뉴-
+            - text: 멜론차트
+        - listitem [ref=e50]:
+          - link "현재 선택된 메뉴- 최신음악" [ref=e51] [cursor=pointer]:
+            - /url: //www.melon.com/new/index.htm
+            - generic [ref=e52]: 현재 선택된 메뉴-
+            - text: 최신음악
+        - listitem [ref=e53]:
+          - link "현재 선택된 메뉴- 장르음악" [ref=e54] [cursor=pointer]:
+            - /url: //www.melon.com/genre/song_list.htm?gnrCode=GN0100
+            - generic [ref=e55]: 현재 선택된 메뉴-
+            - text: 장르음악
+        - listitem [ref=e56]:
+          - link "현재 선택된 메뉴- 멜론DJ" [ref=e57] [cursor=pointer]:
+            - /url: //www.melon.com/dj/today/djtoday_list.htm
+            - generic [ref=e58]: 현재 선택된 메뉴-
+            - text: 멜론DJ
+        - listitem [ref=e59]:
+          - link "현재 선택된 메뉴- 멜론TV" [ref=e60] [cursor=pointer]:
+            - /url: //www.melon.com/tv/index.htm
+            - generic [ref=e61]: 현재 선택된 메뉴-
+            - text: 멜론TV
+        - listitem [ref=e62]:
+          - link "현재 선택된 메뉴- 스타포스트" [ref=e63] [cursor=pointer]:
+            - /url: //www.melon.com/artistplus/todayupdate/index.htm
+            - generic [ref=e64]: 현재 선택된 메뉴-
+            - text: 스타포스트
+        - listitem [ref=e65]:
+          - link "현재 선택된 메뉴- 매거진" [ref=e66] [cursor=pointer]:
+            - /url: //www.melon.com/musicstory/today/index.htm
+            - generic [ref=e67]: 현재 선택된 메뉴-
+            - text: 매거진
+        - listitem [ref=e68]:
+          - link "현재 선택된 메뉴- 뮤직어워드" [ref=e69] [cursor=pointer]:
+            - /url: //www.melon.com/melonaward/weekAward.htm
+            - generic [ref=e70]: 현재 선택된 메뉴-
+            - text: 뮤직어워드
+        - listitem [ref=e71]:
+          - link "현재 선택된 메뉴- 뮤직웨이브" [ref=e72] [cursor=pointer]:
+            - /url: https://musicwave.melon.com
+            - generic [ref=e73]: 현재 선택된 메뉴-
+            - text: 뮤직웨이브
+      - list [ref=e74]:
+        - listitem [ref=e75]:
+          - link "현재 선택된 메뉴- 마이뮤직" [ref=e76] [cursor=pointer]:
+            - /url: javascript:MELON.WEBSVC.POC.menu.goMyMusicMain();
+            - generic [ref=e77]: 현재 선택된 메뉴-
+            - text: 마이뮤직
+  - generic [ref=e80]:
+    - heading "멜론 이용권 구매" [level=2] [ref=e82]
+    - list [ref=e84]:
+      - listitem [ref=e85]:
+        - link "추천 이용권" [ref=e86] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e87]: 추천 이용권
+      - listitem [ref=e88]:
+        - link "할인 특가" [ref=e89] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e90]: 할인 특가
+      - listitem [ref=e91]:
+        - link "전체 이용권" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e93]: 전체 이용권
+      - listitem [ref=e94]:
+        - link "이용권 선물" [ref=e95] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e96]: 이용권 선물
+      - listitem [ref=e97]:
+        - link "쿠폰 등록" [ref=e98] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e99]: 쿠폰 등록
+      - listitem [ref=e100]:
+        - link "멜론 캐시 충전" [ref=e101] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e102]: 멜론 캐시 충전
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - paragraph [ref=e105]:
+          - strong [ref=e106]: 할인 혜택
+          - text: 이 도착했어요!
+          - text: 지금 로그인하고, 추천 이용권을 확인해 보세요.
+        - button "로그인" [ref=e107] [cursor=pointer]
+      - generic [ref=e108]:
+        - paragraph [ref=e109]: 멜로너가 되면 만날 수 있는 서비스
+        - generic [ref=e110]:
+          - generic [ref=e112]:
+            - img "터치 한번에 취향곡 무한 추천 DJ 말랑이" [ref=e115]
+            - img "듣기만해도 쌓이는 내 음악기록 많이들은 &뮤직DNA" [ref=e118]
+            - img "아티스트와 즐기는 실시간 뮤직 채팅 MUSIC WAVE" [ref=e121]
+            - img "최애 아티스트의 독점 콘텐츠 Spotlight" [ref=e124]
+            - img "이벤트 참여하고 캐시로 구독료 절약 캐시프렌즈" [ref=e127]
+            - img "터치 한번에 취향곡 무한 추천 DJ 말랑이" [ref=e130]
+            - img "듣기만해도 쌓이는 내 음악기록 많이들은 &뮤직DNA" [ref=e133]
+            - img "아티스트와 즐기는 실시간 뮤직 채팅 MUSIC WAVE" [ref=e136]
+            - img "최애 아티스트의 독점 콘텐츠 Spotlight" [ref=e139]
+            - img "이벤트 참여하고 캐시로 구독료 절약 캐시프렌즈" [ref=e142]
+            - img "터치 한번에 취향곡 무한 추천 DJ 말랑이" [ref=e145]
+            - img "듣기만해도 쌓이는 내 음악기록 많이들은 &뮤직DNA" [ref=e148]
+            - img "아티스트와 즐기는 실시간 뮤직 채팅 MUSIC WAVE" [ref=e151]
+            - img "최애 아티스트의 독점 콘텐츠 Spotlight" [ref=e154]
+            - img "이벤트 참여하고 캐시로 구독료 절약 캐시프렌즈" [ref=e157]
+          - button "Previous slide" [ref=e158] [cursor=pointer]:
+            - generic [ref=e159]: 다음 배너
+          - button "Next slide" [ref=e160] [cursor=pointer]:
+            - generic [ref=e161]: 이전 배너
+  - generic [ref=e163]:
+    - list [ref=e165]:
+      - listitem [ref=e166]:
+        - link "멜론 스튜디오" [ref=e167] [cursor=pointer]:
+          - /url: //studio.melon.com/
+      - listitem [ref=e168]:
+        - link "Windows 플레이어" [ref=e169] [cursor=pointer]:
+          - /url: //www.melon.com/customer/serviceintro/index.htm
+      - listitem [ref=e170]:
+        - link "Mac 플레이어" [ref=e171] [cursor=pointer]:
+          - /url: //www.melon.com/customer/serviceintro/multi_pc_web.htm
+      - listitem [ref=e172]:
+        - link "iPad" [ref=e173] [cursor=pointer]:
+          - /url: //www.melon.com/customer/serviceintro/ipad.htm
+      - listitem [ref=e174]:
+        - link "고객센터" [ref=e175] [cursor=pointer]:
+          - /url: //faqs2.melon.com/customer/index.htm
+    - list [ref=e176]:
+      - listitem [ref=e177]:
+        - link "이용약관" [ref=e178] [cursor=pointer]:
+          - /url: //info.melon.com/terms/web/terms1_1.html
+      - listitem [ref=e179]:
+        - link "위치기반서비스 이용약관" [ref=e180] [cursor=pointer]:
+          - /url: //info.melon.com/terms/web/terms1_3.html
+          - strong [ref=e181]: 위치기반서비스 이용약관
+      - listitem [ref=e182]:
+        - link "개인정보처리방침" [ref=e183] [cursor=pointer]:
+          - /url: //info.melon.com/terms/web/terms3.html
+          - strong [ref=e184]: 개인정보처리방침
+      - listitem [ref=e185]:
+        - link "청소년보호정책" [ref=e186] [cursor=pointer]:
+          - /url: //info.melon.com/terms/web/terms5_1.html
+      - listitem [ref=e187]:
+        - link "제휴/프로모션문의" [ref=e188] [cursor=pointer]:
+          - /url: //faqs2.melon.com/customer/faq/informFaq.htm?no=1&faqId=QUES20140616000001&SEARCH_KEY=&SEARCH_PAR_CATEGORY=CATE20130909000006&SEARCH_CATEGORY=CATE20130909000021
+      - listitem [ref=e189]:
+        - link "이메일주소무단수집거부" [ref=e190] [cursor=pointer]:
+          - /url: javascript:openEmailCollectionReject();
+      - listitem [ref=e191]:
+        - link "파트너센터" [ref=e192] [cursor=pointer]:
+          - /url: //partner.melon.com/partrct/login/web/login_loginProcess.htm?t=s
+    - paragraph [ref=e193]:
+      - generic [ref=e194]:
+        - strong [ref=e195]: (주)카카오엔터테인먼트
+        - text: 경기도 성남시 분당구 판교역로 235, 에이치스퀘어 N동 8, 9, 10층
+      - generic [ref=e196]: "공동대표이사 : 권기수, 장윤중"
+      - generic [ref=e197]: "사업자등록번호 : 220-88-02594"
+      - generic [ref=e198]:
+        - text: "통신판매업신고번호 : 2018-성남분당B-0004"
+        - link "사업자정보확인" [ref=e199] [cursor=pointer]:
+          - /url: https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208802594
+      - generic [ref=e200]: "문의전화 : 1566-7727 (평일 09:00-18:00, 유료)"
+      - generic [ref=e201]:
+        - text: "이메일 :"
+        - link "melon_info@kakaoent.com" [ref=e202] [cursor=pointer]:
+          - /url: mailto:melon_info@kakaoent.com
+      - generic [ref=e203]: "호스팅서비스사업자 : (주)카카오엔터테인먼트"
+      - link "© Kakao Entertainment Corp." [ref=e205] [cursor=pointer]:
+        - /url: //kakaoent.com

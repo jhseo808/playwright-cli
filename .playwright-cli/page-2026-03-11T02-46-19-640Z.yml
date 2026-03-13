@@ -1,0 +1,583 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - text: skip navigation
+      - list:
+        - listitem:
+          - link "메뉴" [ref=e4] [cursor=pointer]:
+            - /url: "#gnb_menu"
+        - listitem:
+          - link "본문" [ref=e5] [cursor=pointer]:
+            - /url: "#conts_section"
+        - listitem:
+          - link "하단 정보" [ref=e6] [cursor=pointer]:
+            - /url: "#footer"
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - paragraph: 상단 빠른 메뉴
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link "멜론티켓" [ref=e14] [cursor=pointer]:
+                - /url: //ticket.melon.com/main/index.htm
+          - list [ref=e16]:
+            - listitem [ref=e17]:
+              - link "이용권구매" [ref=e18] [cursor=pointer]:
+                - /url: /commerce/pamphlet/web/sale_listMainView.htm
+            - listitem [ref=e19]:
+              - link "멜론혜택" [ref=e20] [cursor=pointer]:
+                - /url: //www.melon.com/benefit/lounge/main.htm
+            - listitem [ref=e21]:
+              - link "이벤트" [ref=e22] [cursor=pointer]:
+                - /url: /event/list.htm
+            - listitem [ref=e23]:
+              - link "공지사항" [ref=e24] [cursor=pointer]:
+                - /url: /customer/announce/index.htm
+        - generic [ref=e25]:
+          - heading "Melon" [level=1] [ref=e26]:
+            - link "Melon" [ref=e27] [cursor=pointer]:
+              - /url: /index.htm
+              - generic [ref=e28]: Melon
+          - group "통합검색영역" [ref=e29]:
+            - generic: 통합검색영역
+            - textbox "검색 입력 편집창" [ref=e30]:
+              - /placeholder: ""
+              - text: Dragon Pony (드래곤포니) EP [RUN RUN RUN]
+            - status [ref=e31]
+            - button "검색" [ref=e32] [cursor=pointer]:
+              - generic [ref=e33]: 검색
+          - generic [ref=e34]:
+            - link "인기 검색어":
+              - /url: /search/trend/index.htm
+            - list [ref=e36]:
+              - listitem [ref=e462]:
+                - strong [ref=e463]:
+                  - text: "2"
+                  - generic: 위
+                - link "Wanna One (워너원)" [ref=e464] [cursor=pointer]:
+                  - /url: javascript:melon.link.goTotalSearch('Wanna One (워너원)','','searchFrm','','hot_kwd');
+                - generic [ref=e465]:
+                  - generic [ref=e466]: 순위상승수
+                  - generic [ref=e467]: "5"
+      - generic [ref=e42]:
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - link "현재 선택된 메뉴- 멜론차트" [ref=e45] [cursor=pointer]:
+              - /url: /chart/index.htm
+              - generic: 현재 선택된 메뉴-
+              - text: 멜론차트
+          - listitem [ref=e46]:
+            - link "현재 선택된 메뉴- 최신음악" [ref=e47] [cursor=pointer]:
+              - /url: /new/index.htm
+              - generic: 현재 선택된 메뉴-
+              - text: 최신음악
+          - listitem [ref=e48]:
+            - link "현재 선택된 메뉴- 장르음악" [ref=e49] [cursor=pointer]:
+              - /url: /genre/song_list.htm
+              - generic: 현재 선택된 메뉴-
+              - text: 장르음악
+          - listitem [ref=e50]:
+            - link "현재 선택된 메뉴- 멜론DJ" [ref=e51] [cursor=pointer]:
+              - /url: /dj/today/djtoday_list.htm
+              - generic: 현재 선택된 메뉴-
+              - text: 멜론DJ
+          - listitem [ref=e52]:
+            - link "현재 선택된 메뉴- 멜론TV" [ref=e53] [cursor=pointer]:
+              - /url: /tv/index.htm
+              - generic: 현재 선택된 메뉴-
+              - text: 멜론TV
+          - listitem [ref=e54]:
+            - link "현재 선택된 메뉴- 스타포스트" [ref=e55] [cursor=pointer]:
+              - /url: /artistplus/todayupdate/index.htm
+              - generic: 현재 선택된 메뉴-
+              - text: 스타포스트
+          - listitem [ref=e56]:
+            - link "현재 선택된 메뉴- 매거진" [ref=e57] [cursor=pointer]:
+              - /url: /musicstory/today/index.htm
+              - generic: 현재 선택된 메뉴-
+              - text: 매거진
+          - listitem [ref=e58]:
+            - link "현재 선택된 메뉴- 뮤직어워드" [ref=e59] [cursor=pointer]:
+              - /url: /melonaward/weekAward.htm
+              - generic: 현재 선택된 메뉴-
+              - text: 뮤직어워드
+          - listitem [ref=e60]:
+            - link "현재 선택된 메뉴- 뮤직웨이브" [ref=e61] [cursor=pointer]:
+              - /url: https://musicwave.melon.com
+              - generic: 현재 선택된 메뉴-
+              - text: 뮤직웨이브
+        - list [ref=e62]:
+          - listitem [ref=e63]:
+            - link "현재 선택된 메뉴- 마이뮤직" [ref=e64] [cursor=pointer]:
+              - /url: javascript:MELON.WEBSVC.POC.menu.goMyMusicMain();
+              - generic: 현재 선택된 메뉴-
+              - text: 마이뮤직
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - heading "최신 앨범" [level=2] [ref=e69]:
+          - link "최신 앨범" [ref=e70] [cursor=pointer]:
+            - /url: /new/album/index.htm
+        - generic [ref=e71]:
+          - list:
+            - listitem [ref=e72]:
+              - link "전체" [ref=e73] [cursor=pointer]:
+                - /url: javascript:;
+            - listitem [ref=e74]:
+              - link "국내" [ref=e75] [cursor=pointer]:
+                - /url: javascript:;
+            - listitem [ref=e76]:
+              - link "해외" [ref=e77] [cursor=pointer]:
+                - /url: javascript:;
+          - generic:
+            - list [ref=e79]:
+              - listitem [ref=e80]:
+                - generic [ref=e81]:
+                  - term:
+                    - generic: RUN RUN RUN
+                  - definition [ref=e82]:
+                    - generic: "앨범이미지:"
+                  - definition [ref=e85]:
+                    - generic: "가수명:"
+                    - link "Dragon Pony (드래곤포니)" [ref=e87] [cursor=pointer]:
+                      - /url: javascript:melon.link.goArtistDetail('3754853');
+              - listitem [ref=e88]:
+                - generic [ref=e89]:
+                  - term:
+                    - generic: 말해줘
+                  - definition [ref=e90]:
+                    - generic: "앨범이미지:"
+                  - definition [ref=e93]:
+                    - generic: "가수명:"
+                    - link "CAMO" [ref=e95] [cursor=pointer]:
+                      - /url: javascript:melon.link.goArtistDetail('2858683');
+              - listitem [ref=e96]:
+                - generic [ref=e97]:
+                  - term:
+                    - generic: 세이렌 OST Part.2
+                  - definition [ref=e98]:
+                    - generic: "앨범이미지:"
+                  - definition [ref=e101]:
+                    - generic: "가수명:"
+                    - link "임현식 (비투비)" [ref=e103] [cursor=pointer]:
+                      - /url: javascript:melon.link.goArtistDetail('672289');
+              - listitem [ref=e104]:
+                - generic [ref=e105]:
+                  - term:
+                    - generic: Go for Love
+                  - definition [ref=e106]:
+                    - generic: "앨범이미지:"
+                  - definition [ref=e109]:
+                    - generic: "가수명:"
+                    - link "민수" [ref=e111] [cursor=pointer]:
+                      - /url: javascript:melon.link.goArtistDetail('1273986');
+              - listitem [ref=e112]:
+                - generic [ref=e113]:
+                  - term:
+                    - generic: SM:ALL ROOM Season 01
+                  - definition [ref=e114]:
+                    - generic: "앨범이미지:"
+                  - definition [ref=e117]:
+                    - generic: "가수명:"
+                    - link "송지우(Song ziu)" [ref=e119] [cursor=pointer]:
+                      - /url: javascript:melon.link.goArtistDetail('4622392');
+              - listitem [ref=e120]:
+                - generic [ref=e121]:
+                  - term:
+                    - generic: AMBITION 3/10
+                  - definition [ref=e122]:
+                    - generic: "앨범이미지:"
+                  - definition [ref=e125]:
+                    - generic: "가수명:"
+                    - generic [ref=e126]:
+                      - link "던말릭 (DON MALIK)" [ref=e127] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('789943');
+                      - text: ","
+                      - link "Hash Swan" [ref=e128] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('827434');
+                    - button "아티스트명 더보기" [ref=e130] [cursor=pointer]:
+                      - generic [ref=e131]: 아티스트명 더보기
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - generic: "9"
+                - strong [ref=e135]: "1"
+                - text: /
+                - generic: "9"
+                - text: "9"
+              - generic [ref=e136]:
+                - link "이전" [ref=e137]:
+                  - /url: javascript:;
+                  - generic [ref=e138]: 이전
+                - link "다음" [ref=e139] [cursor=pointer]:
+                  - /url: javascript:;
+                  - generic [ref=e140]: 다음
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - link "KickFlip(킥플립)" [ref=e143] [cursor=pointer]:
+            - /url: https://www.melon.com/album/detail.htm?albumId=12905043
+          - link "Charlie Puth, Hikaru Utada (우타다 히카루)" [ref=e468] [cursor=pointer]:
+            - /url: https://www.melon.com/album/detail.htm?albumId=12906420
+        - generic [ref=e145]:
+          - link "일시정지" [ref=e146] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e147]: 일시정지
+          - generic [ref=e148]:
+            - link "1번째 이벤트" [ref=e149] [cursor=pointer]:
+              - /url: "#"
+            - link "2번째 이벤트" [ref=e150] [cursor=pointer]:
+              - /url: "#"
+            - link "3번째 이벤트" [ref=e151] [cursor=pointer]:
+              - /url: "#"
+            - link "4번째 이벤트" [ref=e152] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e153]:
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - paragraph [ref=e157]: 멜론을 더 안전하게 이용하세요.
+            - link "회원가입" [ref=e158] [cursor=pointer]:
+              - /url: javascript:MELON.WEBSVC.POC.link.goJoin();
+          - button "로그인" [ref=e159] [cursor=pointer]:
+            - generic [ref=e160]: 로그인
+        - list [ref=e162]:
+          - listitem [ref=e163]:
+            - link "티켓 (랩비트)" [ref=e164] [cursor=pointer]:
+              - /url: https://ticket.melon.com/performance/index.htm?prodId=212746
+      - generic [ref=e166]:
+        - heading "인기 있어요 지금 이슈가 되는 아티스트의 인기 컨텐츠입니다." [level=2] [ref=e167]:
+          - generic [ref=e168]: 인기 있어요
+          - generic [ref=e169]: 지금 이슈가 되는 아티스트의 인기 컨텐츠입니다.
+        - list:
+          - listitem:
+            - generic [ref=e170]:
+              - definition [ref=e171]:
+                - link "피아니스트 알리스 사라 오트, 요한 요한슨을 마주하다" [ref=e172] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16768
+              - term [ref=e174]:
+                - link "피아니스트 알리스 사라 오트, 요한 요한슨을 마주하다 장르 인사이드" [ref=e175] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16768
+                  - generic [ref=e176]: 피아니스트 알리스 사라 오트, 요한 요한슨을 마주하다
+                  - generic [ref=e177]: 장르 인사이드
+              - definition [ref=e178]:
+                - link "멜론매거진" [ref=e181] [cursor=pointer]:
+                  - /url: javascript:goMainMenuLinkPage('N10007','');
+            - generic [ref=e182]:
+              - definition [ref=e183]:
+                - link "전쟁으로 고통받는 아이들을 위해 모인 뮤지션들 [HELP(2)]" [ref=e184] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16766
+              - term [ref=e186]:
+                - link "전쟁으로 고통받는 아이들을 위해 모인 뮤지션들 [HELP(2)] 매거진 이벤트" [ref=e187] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16766
+                  - generic [ref=e188]: 전쟁으로 고통받는 아이들을 위해 모인 뮤지션들 [HELP(2)]
+                  - generic [ref=e189]: 매거진 이벤트
+              - definition [ref=e190]:
+                - link "멜론매거진" [ref=e193] [cursor=pointer]:
+                  - /url: javascript:goMainMenuLinkPage('N10007','');
+            - generic [ref=e194]:
+              - definition [ref=e195]:
+                - link "나답게 살아가고자 하는 드래곤포니의 뜨거운 외침, Dragon Pony (드래곤포니) EP [RUN RUN RUN]" [ref=e196] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16775
+              - term [ref=e198]:
+                - link "나답게 살아가고자 하는 드래곤포니의 뜨거운 외침, Dragon Pony (드래곤포니) EP [RUN RUN RUN] 매거진 이벤트" [ref=e199] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16775
+                  - generic [ref=e200]: 나답게 살아가고자 하는 드래곤포니의 뜨거운 외침, Dragon Pony (드래곤포니) EP [RUN RUN RUN]
+                  - generic [ref=e201]: 매거진 이벤트
+              - definition [ref=e202]:
+                - link "멜론매거진" [ref=e205] [cursor=pointer]:
+                  - /url: javascript:goMainMenuLinkPage('N10007','');
+            - generic [ref=e206]:
+              - definition [ref=e207]:
+                - link "온유 (ONEW) 다섯 번째 미니 앨범 [TOUGH LOVE]" [ref=e208] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16772
+              - term [ref=e210]:
+                - link "온유 (ONEW) 다섯 번째 미니 앨범 [TOUGH LOVE] 매거진 이벤트" [ref=e211] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16772
+                  - generic [ref=e212]: 온유 (ONEW) 다섯 번째 미니 앨범 [TOUGH LOVE]
+                  - generic [ref=e213]: 매거진 이벤트
+              - definition [ref=e214]:
+                - link "멜론매거진" [ref=e217] [cursor=pointer]:
+                  - /url: javascript:goMainMenuLinkPage('N10007','');
+            - generic [ref=e218]:
+              - definition [ref=e219]:
+                - link "두근두근 단종오빠의 이중생활" [ref=e220] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16771
+              - term [ref=e222]:
+                - link "두근두근 단종오빠의 이중생활 트렌드 클리핑" [ref=e223] [cursor=pointer]:
+                  - /url: /musicstory/inform.htm?mstorySeq=16771
+                  - generic [ref=e224]: 두근두근 단종오빠의 이중생활
+                  - generic [ref=e225]: 트렌드 클리핑
+              - definition [ref=e226]:
+                - link "멜론매거진" [ref=e229] [cursor=pointer]:
+                  - /url: javascript:goMainMenuLinkPage('N10007','');
+            - generic [ref=e230]:
+              - definition [ref=e231]:
+                - 'link "ALLDAY PROJECT x PUBG: BATTLEGROUNDS ''I DON''T BARGAIN''" [ref=e232] [cursor=pointer]':
+                  - /url: /musicstory/inform.htm?mstorySeq=16773
+              - term [ref=e234]:
+                - 'link "ALLDAY PROJECT x PUBG: BATTLEGROUNDS ''I DON''T BARGAIN'' 매거진 이벤트" [ref=e235] [cursor=pointer]':
+                  - /url: /musicstory/inform.htm?mstorySeq=16773
+                  - generic [ref=e236]: "ALLDAY PROJECT x PUBG: BATTLEGROUNDS 'I DON'T BARGAIN'"
+                  - generic [ref=e237]: 매거진 이벤트
+              - definition [ref=e238]:
+                - link "멜론매거진" [ref=e241] [cursor=pointer]:
+                  - /url: javascript:goMainMenuLinkPage('N10007','');
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - generic: "2"
+            - strong [ref=e245]: "2"
+            - text: /
+            - generic: "2"
+            - text: "2"
+          - generic [ref=e246]:
+            - link "이전" [ref=e247] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e248]: 이전
+            - link "다음" [ref=e249]:
+              - /url: javascript:;
+              - generic [ref=e250]: 다음
+      - generic [ref=e251]:
+        - heading "멜론차트" [level=2] [ref=e252]:
+          - link "멜론차트" [ref=e253] [cursor=pointer]:
+            - /url: /chart/index.htm
+        - generic:
+          - list:
+            - listitem:
+              - link "TOP100 보기" [ref=e254] [cursor=pointer]:
+                - /url: javascript:;
+              - generic: TOP100
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - text: 2026.03.11
+                  - strong [ref=e258]: 11:00
+                  - text: 기준
+                - list [ref=e259]:
+                  - listitem [ref=e260]:
+                    - generic [ref=e261]:
+                      - generic [ref=e262]: "1"
+                      - generic: 위
+                      - generic [ref=e263]:
+                        - text: "0"
+                        - generic [ref=e264]: 순위 동일
+                    - generic [ref=e265]:
+                      - link "REVIVE+" [ref=e267] [cursor=pointer]:
+                        - /url: javascript:melon.link.goAlbumDetail('12845274');
+                      - generic [ref=e269]:
+                        - paragraph [ref=e270]:
+                          - link "BANG BANG" [ref=e271] [cursor=pointer]:
+                            - /url: javascript:melon.play.playSong('10010101',601237102);
+                        - link "IVE (아이브)" [ref=e274] [cursor=pointer]:
+                          - /url: javascript:melon.link.goArtistDetail('3055146');
+                  - listitem [ref=e275]:
+                    - generic [ref=e276]:
+                      - generic [ref=e277]: "2"
+                      - generic: 위
+                      - generic [ref=e278]:
+                        - text: "0"
+                        - generic [ref=e279]: 순위 동일
+                    - generic [ref=e281]:
+                      - paragraph [ref=e282]:
+                        - link "404 (New Era)" [ref=e283] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',601013499);
+                      - link "KiiiKiii (키키)" [ref=e286] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('4099078');
+                  - listitem [ref=e287]:
+                    - generic [ref=e288]:
+                      - generic [ref=e289]: "3"
+                      - generic: 위
+                      - generic [ref=e290]:
+                        - text: "0"
+                        - generic [ref=e291]: 순위 동일
+                    - generic [ref=e293]:
+                      - paragraph [ref=e294]:
+                        - link "RUDE!" [ref=e295] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',601332163);
+                      - link "Hearts2Hearts (하츠투하츠)" [ref=e298] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('4096106');
+                  - listitem [ref=e299]:
+                    - generic [ref=e300]:
+                      - generic [ref=e301]: "4"
+                      - generic: 위
+                      - generic [ref=e302]:
+                        - text: "0"
+                        - generic [ref=e303]: 순위 동일
+                    - generic [ref=e305]:
+                      - paragraph [ref=e306]:
+                        - link "Good Goodbye" [ref=e307] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',600287375);
+                      - link "화사 (HWASA)" [ref=e310] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('756531');
+                  - listitem [ref=e311]:
+                    - generic [ref=e312]:
+                      - generic [ref=e313]: "5"
+                      - generic: 위
+                      - generic [ref=e314]:
+                        - text: "0"
+                        - generic [ref=e315]: 순위 동일
+                    - generic [ref=e317]:
+                      - paragraph [ref=e318]:
+                        - link "사랑하게 될 거야" [ref=e319] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',36730261);
+                      - link "한로로" [ref=e322] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('3080810');
+                  - listitem [ref=e323]:
+                    - generic [ref=e324]:
+                      - generic [ref=e325]: "6"
+                      - generic: 위
+                      - generic [ref=e326]:
+                        - text: "0"
+                        - generic [ref=e327]: 순위 동일
+                    - generic [ref=e329]:
+                      - paragraph [ref=e330]:
+                        - link "Drowning" [ref=e331] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',36397952);
+                      - link "WOODZ" [ref=e334] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('2086047');
+                  - listitem [ref=e335]:
+                    - generic [ref=e336]:
+                      - generic [ref=e337]: "7"
+                      - generic: 위
+                      - generic [ref=e338]:
+                        - text: "0"
+                        - generic [ref=e339]: 순위 동일
+                    - generic [ref=e341]:
+                      - paragraph [ref=e342]:
+                        - link "그대 작은 나의 세상이 되어" [ref=e343] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',33241003);
+                      - link "카더가든" [ref=e346] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('735506');
+                  - listitem [ref=e347]:
+                    - generic [ref=e348]:
+                      - generic [ref=e349]: "8"
+                      - generic: 위
+                      - generic [ref=e350]:
+                        - text: "2"
+                        - generic [ref=e351]: 단계 상승
+                    - generic [ref=e353]:
+                      - paragraph [ref=e354]:
+                        - link "0+0" [ref=e355] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',39504779);
+                      - link "한로로" [ref=e358] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('3080810');
+                  - listitem [ref=e359]:
+                    - generic [ref=e360]:
+                      - generic [ref=e361]: "9"
+                      - generic: 위
+                      - generic [ref=e362]:
+                        - text: "1"
+                        - generic [ref=e363]: 단계 하락
+                    - generic [ref=e365]:
+                      - paragraph [ref=e366]:
+                        - link "BLACKHOLE" [ref=e367] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',601356371);
+                      - link "IVE (아이브)" [ref=e370] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('3055146');
+                  - listitem [ref=e371]:
+                    - generic [ref=e372]:
+                      - generic [ref=e373]: "10"
+                      - generic: 위
+                      - generic [ref=e374]:
+                        - text: "1"
+                        - generic [ref=e375]: 단계 상승
+                    - generic [ref=e377]:
+                      - paragraph [ref=e378]:
+                        - link "타임캡슐" [ref=e379] [cursor=pointer]:
+                          - /url: javascript:melon.play.playSong('10010101',600299706);
+                      - link "다비치" [ref=e382] [cursor=pointer]:
+                        - /url: javascript:melon.link.goArtistDetail('236815');
+                - generic [ref=e383]:
+                  - button "셔플듣기" [ref=e384] [cursor=pointer]:
+                    - generic [ref=e386]: 셔플듣기
+                  - link "더보기" [ref=e388] [cursor=pointer]:
+                    - /url: /chart/index.htm
+                    - generic [ref=e389]: 더보기
+            - listitem:
+              - link "POP 보기" [ref=e391] [cursor=pointer]:
+                - /url: javascript:;
+              - generic: POP
+            - listitem:
+              - link "아티스트 보기" [ref=e393] [cursor=pointer]:
+                - /url: javascript:;
+              - generic: 아티스트
+      - generic [ref=e396]:
+        - term [ref=e397]:
+          - link "공지사항" [ref=e398] [cursor=pointer]:
+            - /url: /customer/announce/index.htm
+        - definition [ref=e399]:
+          - link "멜론 서비스 점검 안내(순단 현상 발생)" [ref=e400] [cursor=pointer]:
+            - /url: javascript:goAnnounDetail('1182');
+        - definition [ref=e401]: 2026.01.08
+    - generic [ref=e403]:
+      - list [ref=e405]:
+        - listitem [ref=e406]:
+          - link "멜론 스튜디오" [ref=e407] [cursor=pointer]:
+            - /url: //studio.melon.com/
+        - listitem [ref=e408]:
+          - link "Windows 플레이어" [ref=e409] [cursor=pointer]:
+            - /url: //www.melon.com/customer/serviceintro/index.htm
+        - listitem [ref=e410]:
+          - link "Mac 플레이어" [ref=e411] [cursor=pointer]:
+            - /url: //www.melon.com/customer/serviceintro/multi_pc_web.htm
+        - listitem [ref=e412]:
+          - link "iPad" [ref=e413] [cursor=pointer]:
+            - /url: //www.melon.com/customer/serviceintro/ipad.htm
+        - listitem [ref=e414]:
+          - link "고객센터" [ref=e415] [cursor=pointer]:
+            - /url: //faqs2.melon.com/customer/index.htm
+      - list [ref=e416]:
+        - listitem [ref=e417]:
+          - link "이용약관" [ref=e418] [cursor=pointer]:
+            - /url: //info.melon.com/terms/web/terms1_1.html
+        - listitem [ref=e419]:
+          - link "위치기반서비스 이용약관" [ref=e420] [cursor=pointer]:
+            - /url: //info.melon.com/terms/web/terms1_3.html
+            - strong [ref=e421]: 위치기반서비스 이용약관
+        - listitem [ref=e422]:
+          - link "개인정보처리방침" [ref=e423] [cursor=pointer]:
+            - /url: //info.melon.com/terms/web/terms3.html
+            - strong [ref=e424]: 개인정보처리방침
+        - listitem [ref=e425]:
+          - link "청소년보호정책" [ref=e426] [cursor=pointer]:
+            - /url: //info.melon.com/terms/web/terms5_1.html
+        - listitem [ref=e427]:
+          - link "제휴/프로모션문의" [ref=e428] [cursor=pointer]:
+            - /url: //faqs2.melon.com/customer/faq/informFaq.htm?no=1&faqId=QUES20140616000001&SEARCH_KEY=&SEARCH_PAR_CATEGORY=CATE20130909000006&SEARCH_CATEGORY=CATE20130909000021
+        - listitem [ref=e429]:
+          - link "이메일주소무단수집거부" [ref=e430] [cursor=pointer]:
+            - /url: javascript:openEmailCollectionReject();
+        - listitem [ref=e431]:
+          - link "파트너센터" [ref=e432] [cursor=pointer]:
+            - /url: //partner.melon.com/partrct/login/web/login_loginProcess.htm?t=s
+      - paragraph [ref=e433]:
+        - generic [ref=e434]:
+          - strong [ref=e435]: (주)카카오엔터테인먼트
+          - text: 경기도 성남시 분당구 판교역로 235, 에이치스퀘어 N동 8, 9, 10층
+        - generic [ref=e436]: "공동대표이사 : 권기수, 장윤중"
+        - generic [ref=e437]: "사업자등록번호 : 220-88-02594"
+        - generic [ref=e438]:
+          - text: "통신판매업신고번호 : 2018-성남분당B-0004"
+          - link "사업자정보확인" [ref=e439] [cursor=pointer]:
+            - /url: https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208802594
+        - generic [ref=e440]: "문의전화 : 1566-7727 (평일 09:00-18:00, 유료)"
+        - generic [ref=e441]:
+          - text: "이메일 :"
+          - link "melon_info@kakaoent.com" [ref=e442] [cursor=pointer]:
+            - /url: mailto:melon_info@kakaoent.com
+        - generic [ref=e443]: "호스팅서비스사업자 : (주)카카오엔터테인먼트"
+        - link "© Kakao Entertainment Corp." [ref=e445] [cursor=pointer]:
+          - /url: //kakaoent.com
+  - generic [ref=e447]:
+    - generic [ref=e448]:
+      - strong: 이벤트 배너
+      - list [ref=e449]:
+        - listitem [ref=e450]:
+          - link "상품":
+            - /url: https://www.melon.com/buy/pamphlet/recommend.htm
+            - img "상품" [ref=e451] [cursor=pointer]
+        - listitem [ref=e452]:
+          - link "응답하라 하이스쿨":
+            - /url: https://ticket.melon.com/performance/index.htm?prodId=212838
+            - img "응답하라 하이스쿨" [ref=e453] [cursor=pointer]
+    - generic [ref=e454]:
+      - generic [ref=e455]:
+        - checkbox "오늘 하루 이 창을 열지 않음" [ref=e456]
+        - text: 오늘 하루 이 창을 열지 않음
+      - button "닫기" [ref=e458] [cursor=pointer]:
+        - generic [ref=e460]: 닫기

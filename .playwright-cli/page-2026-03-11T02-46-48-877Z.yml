@@ -1,0 +1,32 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Melon" [level=1] [ref=e5]:
+      - generic [ref=e6]: Melon
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - link "카카오 QR코드 로그인" [ref=e12] [cursor=pointer]:
+        - /url: "#"
+        - text: 카카오 QR코드 로그인
+      - button "카카오 QR코드 로그인 도움말" [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]: 카카오 QR코드 로그인 도움말
+    - generic [ref=e16]:
+      - button "카카오계정 로그인" [ref=e18] [cursor=pointer]: 카카오계정 로그인
+      - button "멜론아이디 로그인" [ref=e21] [cursor=pointer]: 멜론아이디 로그인
+      - link "회원가입" [ref=e24] [cursor=pointer]:
+        - /url: javascript:goJoin();
+  - contentinfo [ref=e25]:
+    - generic [ref=e26]:
+      - heading "서비스 이용정보" [level=2]
+      - list [ref=e27]:
+        - listitem [ref=e28]:
+          - link "이용약관" [ref=e29] [cursor=pointer]:
+            - /url: javascript:_linkInfo.TERMS1_1('WP10');
+        - listitem [ref=e30]:
+          - link "위치기반서비스이용약관" [ref=e31] [cursor=pointer]:
+            - /url: javascript:_linkInfo.TERMS1_3('WP10', true);
+        - listitem [ref=e32]:
+          - link "개인정보처리방침" [ref=e33] [cursor=pointer]:
+            - /url: javascript:_linkInfo.TERMS3('WP10', true);
+      - paragraph [ref=e34]: "문의전화 : 1566-7727 (평일 09:00-18:00, 유료)"
+      - link "© Kakao Entertainment Corp." [ref=e36] [cursor=pointer]:
+        - /url: https://kakaoent.com
